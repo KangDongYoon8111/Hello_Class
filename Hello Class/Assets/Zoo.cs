@@ -7,9 +7,17 @@ public class Zoo : MonoBehaviour
     void Start()
     {
         Animal tom = new Animal();
-        //tom.name = "盆";
-        //tom.sound = "衬克!";
+        tom.name = "盆";
+        tom.sound = "衬克!";
+
+        Animal jerry = new Animal();
+        jerry.name = "力府";
+        jerry.sound = "嘛嘛!";
+
+        jerry = tom;
+        jerry.name = "固虐";
 
         tom.PlaySound();
+        jerry.PlaySound();
     }
 }
